@@ -16,7 +16,12 @@ var todoList = {
         else {
             console.log('My Todos: ') //this.todos not super useful, so we can do wo it.
             for ( var i = 0; i < this.todos.length; i++) {
-                console.log(this.todos[i].todoText)
+                if (this.todos[i].completed === true) {
+                    console.log('[✔]', this.todos[i].todoText)
+                }
+                else {
+                    console.log('[ ]', this.todos[i].todoText)
+                }
             }
         }
 
@@ -25,7 +30,7 @@ var todoList = {
         this.todos.push({
             todoText: todoText,
             completed: false
-        })
+        });
         this.displayTodos() 
         //todoList.addTodos('This is a todo')
     },
