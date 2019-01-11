@@ -8,3 +8,5 @@ Practical Javascript
 * You can find it here: [www.watchandcode.com](https://watchandcode.com/])
 
 * The main goal is to slowly create a todo list app which continues to get more and more complex as we progress.
+
+* Gordon is a good teacher
