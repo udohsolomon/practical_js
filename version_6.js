@@ -49,15 +49,22 @@ var todoList = {
         var totalTodos = this.todos.length
         var completedTodos = 0
         // get number of completed todos
-        for (var i = 0; i < totalTodos; i++) {
+        for (var i = 0; i < this.todos.length; i++) {
             if (this.todos[i].completed === true) {
                 completedTodos++
             }
         }
         // case 1: If everything is true, make everything false 
         if (completedTodos === totalTodos) {
-            for (var i = 0; i < totalTodos; i++) {
+            for (var i = 0; i < this.todos.length; i++) {
                 this.todos[i].completed === false
+            }
+        }
+        // case 2: Otherwise make everything true
+        else {
+            for (var i = 0; i < this.todos.length; i++) {
+                this.todo[i].completed === true
+
             }
         }
         this.displayTodos()   
@@ -65,5 +72,5 @@ var todoList = {
     deleteTodos: function(position) {
         this.todos.splice(position, 1)
         this.displayTodos()
-    },
+    }
 } 
