@@ -38,12 +38,13 @@ var todoList = {
         this.todos[position].todoText = todoText
         this.displayTodos()
     },
-    /* toggleTodos: function(position) {
-     * var todo = this.todos[position]
-     * todo.completed = !todo.completed
-     * this.displayTodos()
-     * },
-     */ 
+
+    toggleCompleted: function(position) {
+     var todo = this.todos[position]
+     todo.completed = !todo.completed
+     this.displayTodos()
+     },
+ 
     toggleAll: function() {
         var totalTodos = this.todos.length
         var completedTodos = 0
@@ -59,13 +60,9 @@ var todoList = {
                 this.todos[i].completed === false
             }
         }   
-    } 
-        
-        
-        
-    },
+    }, 
     deleteTodos: function(position) {
         this.todos.splice(position, 1)
         this.displayTodos()
-    }
+    },
 } 
