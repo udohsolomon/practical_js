@@ -74,10 +74,11 @@ var todoList = {
         this.displayTodos()
     }
 } 
-
+// getting access to display todos button
 var displayTodosButton = document.getElementById('displayTodosButton');
 console.log(displayTodosButton)
 
+// run the display method when someone click on the display button
 displayTodosButton.addEventListener('click', function() {
   todoList.displayTodos()
 })
