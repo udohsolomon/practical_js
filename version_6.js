@@ -57,13 +57,13 @@ var todoList = {
         // case 1: If everything is true, make everything false 
         if (completedTodos === totalTodos) {
             for (var i = 0; i < this.todos.length; i++) {
-                this.todos[i].completed === false
+                this.todos[i].completed = false
             }
         }
         // case 2: Otherwise make everything true
         else {
             for (var i = 0; i < this.todos.length; i++) {
-                this.todo[i].completed === true
+                this.todos[i].completed = true
 
             }
         }
