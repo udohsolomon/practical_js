@@ -2,7 +2,7 @@
 
 // V7 Requirements:
 /*
- *.toggleAll: if everything is true, make everything false
- *.toggleAll: Otherwise, make everything true
- *.displayTodos should show .completed
+ * There should be a display todos button and a toggleAll button in the app
+ * Clicking Display todos should run todoList.displayTodos
+ * Clicking on toggleAll should run todoList.toggleAll
  */

@@ -14,7 +14,7 @@ var todoList = {
             console.log('Your todo list is empty!')
         }
         else {
-            console.log('My Todos: ') //this.todos not super useful, so we can do wo it.
+            console.log('My Todos: ') //this.todos is not super useful, so we can do w/o it.
             for ( var i = 0; i < this.todos.length; i++) {
                 if (this.todos[i].completed === true) {
                     console.log('[✔]', this.todos[i].todoText)
