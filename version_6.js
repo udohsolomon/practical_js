@@ -49,9 +49,9 @@ var todoList = {
         var totalTodos = this.todos.length
         var completedTodos = 0
         // get number of completed todos
-        for (var i; i < totalTodos; i++) {
+        for (var i = 0; i < totalTodos; i++) {
             if (this.todos[i].completed === true) {
-                completed++
+                completedTodos++
             }
         }
         // case 1: If everything is true, make everything false 
@@ -59,7 +59,8 @@ var todoList = {
             for (var i = 0; i < totalTodos; i++) {
                 this.todos[i].completed === false
             }
-        }   
+        }
+        this.displayTodos()   
     }, 
     deleteTodos: function(position) {
         this.todos.splice(position, 1)
