@@ -2,9 +2,10 @@
 
 // V8 Requirements:
 /*
- * There should be a display todos button and a toggleAll button in the app
- * Clicking Display todos should run todoList.displayTodos
- * Clicking on toggleAll should run todoList.toggleAll
+ * It should have working controls for .addTodos
+ * It should have working controls for .changeTodos
+ * It should have working controls for .deleteTodos
+ * It should have working controls for .toggleTodos
  */
 
 var todoList = {
