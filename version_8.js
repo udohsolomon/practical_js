@@ -90,8 +90,7 @@ var handlers = {
     },
     changeTodos: function() {
         var changeTodosTextInput = document.getElementById('changeTodosTextInput')
-        var changeTodosPositionInput = document.getElementById('chnageTodosPositionInput')
-        todoList.changeTodos(changeTodosTextInput.value)
+        var changeTodosPositionInput = document.getElementById('changeTodosPositionInput')
         todoList.changeTodos(changeTodosPositionInput.valueAsNumber, changeTodosTextInput.value)
         changeTodosTextInput.value = ''
         changeTodosPositionInput.value = ''
