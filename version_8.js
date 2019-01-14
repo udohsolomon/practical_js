@@ -80,9 +80,6 @@ var handlers = {
     displayTodosButton: function() {
         todoList.displayTodos()
     },
-    toggleAllTodosButton: function() {
-        todoList.toggleAll()
-    },
     addTodos: function() {
         var addTodosTextInput = document.getElementById('addTodosTextInput')
         todoList.addTodos(addTodosTextInput.value)
@@ -99,5 +96,13 @@ var handlers = {
         var deleteTodosPositionInput = document.getElementById('deleteTodosPositionInput')
         todoList.deleteTodos(deleteTodosPositionInput.value)
         deleteTodosPositionInput.value = ''
+    },
+    toggleCompleted: function() {
+        var toggleCompletedPosition = document.getElementById('toggleCompletedPosition')
+        todoList.toggleCompleted(toggleCompletedPosition)
+        toggleCompletedPosition.value = ''
+    },
+    toggleAllTodosButton: function() {
+        todoList.toggleAll()
     }
 }
