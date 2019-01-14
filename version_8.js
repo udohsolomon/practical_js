@@ -92,6 +92,6 @@ var handlers = {
         var changeTodosTextInput = document.getElementById('changeTodosTextInput')
         var changeTodosPositionInput = document.getElementById('chnageTodosPositionInput')
         todoList.changeTodos(changeTodosTextInput.value)
-        todoList.changeTodos(changeTodosPositionInput.valueAsNumber)
+        todoList.changeTodos(changeTodosPositionInput.valueAsNumber, changeTodosTextInput.value)
     }
 }
