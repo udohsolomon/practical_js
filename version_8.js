@@ -87,5 +87,11 @@ var handlers = {
         var addTodosTextInput = document.getElementById('addTodosTextInput')
         todoList.addTodos(addTodosTextInput.value)
         addTodosTextInput.value = ''
+    },
+    changeTodos: function() {
+        var changeTodosTextInput = document.getElementById('changeTodosTextInput')
+        var changeTodosPositionInput = document.getElementById('chnageTodosPositionInput')
+        todoList.changeTodos(changeTodosTextInput.value)
+        todoList.changeTodos(changeTodosPositionInput.valueAsNumber)
     }
 }
