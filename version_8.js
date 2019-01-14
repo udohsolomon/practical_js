@@ -82,5 +82,9 @@ var handlers = {
     },
     toggleAllTodosButton: function() {
         todoList.toggleAll()
+    },
+    addTodos: function() {
+        var addTodosTextInput = document.getElementById('addTodosTextInput')
+        todoList.addTodos(addTodosTextInput.value)
     }
 }
