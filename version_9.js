@@ -112,6 +112,7 @@ var view = {
         todosUl.innerHTML = ''
         for (var i = 0; i < todoList.length; i++) {
             var todoLi = document.createElement('li')
+            todoLi.textContent = 
             todosUl.appendChild('todoLi')
         }
     }
