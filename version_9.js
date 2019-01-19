@@ -111,7 +111,6 @@ var view = {
         var todosUl = document.querySelector('ul')
         todosUl.innerHTML = ''
         for (var i = 0; i < todoList.length; i++) {
-            var todosUl = document.querySelector('ul')
             var todoLi = document.createElement('li')
             todosUl.appendChild('todoLi')
         }
