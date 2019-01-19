@@ -108,6 +108,8 @@ var handlers = {
 
 var view = {
     displayTodos: function() {
+        var todosUl = document.querySelector('ul')
+        todosUl.innerHTML = ''
         for (var i = 0; i < todoList.length; i++) {
             var todosUl = document.querySelector('ul')
             var todoLi = document.createElement('li')
