@@ -3,9 +3,8 @@
 // V8 Requirements:
 /*
  * There should be an li element for every todo
- * It should have working controls for .changeTodos
- * It should have working controls for .deleteTodos
- * It should have working controls for .toggleTodos
+ * Each li element should contain .todoText
+ * Each li element should show .completed
  */
 
 var todoList = {
