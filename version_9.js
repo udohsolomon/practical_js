@@ -107,6 +107,7 @@ var handlers = {
     },
     toggleAllTodosButton: function() {
         todoList.toggleAll()
+        view.displayTodos()
     }
 }
 
