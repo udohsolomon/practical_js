@@ -71,10 +71,8 @@ var handlers = {
         changeTodosPositionInput.value = ''
         view.displayTodos()
     },
-    deleteTodos: function() {
-        var deleteTodosPositionInput = document.getElementById('deleteTodosPositionInput')
-        todoList.deleteTodos(deleteTodosPositionInput.value)
-        deleteTodosPositionInput.value = ''
+    deleteTodos: function(position) {
+        todoList.deleteTodos(position)
         view.displayTodos()
     },
     toggleCompleted: function() {
@@ -104,8 +102,32 @@ var view = {
                 todoTextWithCompletion = '[ ]' + todo.todoText
             }
 
-            todoLi.textContent = todoList.todos[i].todoText
+            todoLi.id = i
+            todoLi.textContent = todoTextWithCompletion
+            todoLi.appendChild(this.addTodos())
             todosUl.appendChild('todoLi')
         }
+    },
+    createDeleteButton: function() {
+        var deleteButton = document.createElement('button')
+        deleteButton.textContent = 'Delete'
+        deleteButton.className = 'deleteButton'
+        return deleteButton
+    },
+    setUpEventListeners: function() {
+        var todosUl = document.querySelector('ul')
+        todosUl.addEventListener('click', function(event) {
+            console.log(event.target.parentNode.id)
+
+            //get the element that was clicked on
+            var elementClicked = event.target
+
+            // check if element clicked is a delete button
+            if (elementClicked.className === 'deleteButton') {
+                // run handlers.deleteTodo(position)
+                handlers.deleteTodos(parseInt(elementClicked.parentNode.id))
+            }
+        })
     }
 }
+view.setUpEventListeners()
