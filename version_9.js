@@ -83,6 +83,7 @@ var handlers = {
         var addTodosTextInput = document.getElementById('addTodosTextInput')
         todoList.addTodos(addTodosTextInput.value)
         addTodosTextInput.value = ''
+        view.displayTodos()
     },
     changeTodos: function() {
         var changeTodosTextInput = document.getElementById('changeTodosTextInput')
