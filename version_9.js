@@ -97,11 +97,13 @@ var handlers = {
         var deleteTodosPositionInput = document.getElementById('deleteTodosPositionInput')
         todoList.deleteTodos(deleteTodosPositionInput.value)
         deleteTodosPositionInput.value = ''
+        view.displayTodos()
     },
     toggleCompleted: function() {
         var toggleCompletedPosition = document.getElementById('toggleCompletedPosition')
         todoList.toggleCompleted(toggleCompletedPosition)
         toggleCompletedPosition.value = ''
+        view.displayTodos()
     },
     toggleAllTodosButton: function() {
         todoList.toggleAll()
