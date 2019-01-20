@@ -115,7 +115,10 @@ var view = {
 
             var todoTextWithCompletion = ''
             if (todo.completed === true) {
-                todoTextWithCompletion = ''
+                todoTextWithCompletion = '[✔]' + todo.todoText
+            }
+            else {
+                todoTextWithCompletion = '[ ]' + todo.todoText
             }
 
             todoLi.textContent = todoList.todos[i].todoText
