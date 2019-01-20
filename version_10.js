@@ -1,10 +1,12 @@
-//Practical JavaScript - Version 9 
+//Practical JavaScript - Version 10 
 
-// V9 Requirements:
+// V10 Requirements:
 /*
- * There should be an li element for every todo
- * Each li element should contain .todoText
- * Each li element should show .completed
+ * There should be a way to create delete buttons
+ * There should be a delete button for each todo
+ * Each li element should have an id that has the todo position
+ * Delete buttons should have access to the todo it
+ * Clicking delete should update todoList.todos and the DOM
  */
 
 var todoList = {
