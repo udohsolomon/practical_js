@@ -112,6 +112,12 @@ var view = {
         todosUl.innerHTML = ''
         for (var i = 0; i < todoList.length; i++) {
             var todoLi = document.createElement('li')
+
+            var todoTextWithCompletion = ''
+            if (todo.completed === true) {
+                todoTextWithCompletion = ''
+            }
+
             todoLi.textContent = todoList.todos[i].todoText
             todosUl.appendChild('todoLi')
         }
