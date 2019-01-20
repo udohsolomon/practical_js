@@ -91,6 +91,7 @@ var handlers = {
         todoList.changeTodos(changeTodosPositionInput.valueAsNumber, changeTodosTextInput.value)
         changeTodosTextInput.value = ''
         changeTodosPositionInput.value = ''
+        view.displayTodos()
     },
     deleteTodos: function() {
         var deleteTodosPositionInput = document.getElementById('deleteTodosPositionInput')
